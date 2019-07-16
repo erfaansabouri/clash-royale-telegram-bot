@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 
 use Telegram\Bot\Api;
 
-$API_KEY = '854741611:AAEUEwgQchuFPekuE9rw2xUxsLHuaNR_Ks8';
+$API_KEY = 
 $telegram = new Api($API_KEY);
 $updates = $telegram->getWebhookUpdates();
 $chat_id = $updates->getMessage()->getChat()->getId();
@@ -15,16 +15,16 @@ $text = $updates->getMessage()->getText();
 
 // Database Connection
 
-$servername = "localhost";
-$username = "biaradi1_royale";
-$password = "SametPishr0";
-$dbname = "biaradi1_royale";
+$servername = 
+$username = 
+$password = 
+$dbname = 
 $connection = new mysqli($servername, $username, $password, $dbname);
 
 
 // Clash API
 
-$token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjY1NSwiaWRlbiI6IjU4NDc4MjI4OTQ1NjcyNjA0MiIsIm1kIjp7fSwidHMiOjE1NTk3OTcyMzg4NTR9.TTE7dCk43fTy5MeNzZn3Ded4LJeH__ODBm7iFRFWYw0";
+$token = "iFRFWYw0";
 $opts = [
     "http" => [
         "header" => "auth:" . $token
